@@ -37,21 +37,16 @@ cd cfg
 ```
 - Run the following commands in Terminal. **yolov4.cfg** contains the network structure and basic training parameters of YOLOv4. **obj.names** contains the class names of our model. **obj.data** contains the custom files we need.
 ```sh
-wget https://raw.githubusercontent.com/newjoy2018/MA_YOLOv4/main/Downloads/cfg/yolov4.cfg
-wget https://raw.githubusercontent.com/newjoy2018/MA_YOLOv4/main/Downloads/cfg/obj.names
-wget https://raw.githubusercontent.com/newjoy2018/MA_YOLOv4/main/Downloads/cfg/obj.data
+wget https://raw.githubusercontent.com/XiangYusheng/YOLOv4_Geimer/main/KIT.cfg
+wget https://raw.githubusercontent.com/XiangYusheng/YOLOv4_Geimer/main/KIT.names
+wget https://raw.githubusercontent.com/XiangYusheng/YOLOv4_Geimer/main/KIT.data
 cd ..
 ```
 
 #### Step 5. Prepare the weight file
-- Run the following commands to make a new folder for weight files.
-```sh
-mkdir weights
-cd weights
-```
 - Download our pre-trained weight file from the following URL, so that the YOLOv4 model could be directly used to detect trucks, excavators et al.
 ```
-https://drive.google.com/file/d/1fSKsHjh2rsq-j5JdytgbS0n7Fh-STKm4/view?usp=sharing
+https://drive.google.com/file/d/1vhK-e2nDTJy3T_u7RyPW0DmJIN2gfMnP/view?usp=sharing
 ```
 
 
