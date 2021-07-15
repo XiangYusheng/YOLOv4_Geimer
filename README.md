@@ -62,7 +62,7 @@ wget https://raw.githubusercontent.com/XiangYusheng/YOLOv4_Geimer/main/0043.jpg
 Run the following commands to test your own images. `chmod +x darknet/darknet` is used to make the `darknet` executable. `example.jpg` is your own images to be detected. 
 ```sh
 chmod +x darknet
-./darknet detector test cfg/KIT.data cfg/KIT.cfg yolov4_CM.weights -ext_output data/000001.jpg
+./darknet detector test cfg/KIT.data cfg/KIT.cfg yolov4_CM.weights  data/000001.jpg
 ```
 
 
