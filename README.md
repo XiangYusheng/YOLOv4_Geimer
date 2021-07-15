@@ -56,6 +56,7 @@ wget https://raw.githubusercontent.com/XiangYusheng/YOLOv4_Geimer/main/000001.jp
 wget https://raw.githubusercontent.com/XiangYusheng/YOLOv4_Geimer/main/0095.jpg
 wget https://raw.githubusercontent.com/XiangYusheng/YOLOv4_Geimer/main/0049.jpg
 wget https://raw.githubusercontent.com/XiangYusheng/YOLOv4_Geimer/main/0043.jpg
+cd ..
 ```
 
 #### Step 7. Test your own images with this trained model
