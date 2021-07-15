@@ -14,7 +14,7 @@
 git clone https://github.com/AlexeyAB/darknet.git
 cd darknet
 ```
-#### Step 2. Modify the Makefile
+#### Step 2. Modify the Makefile（since your computer is not suitable for GPU, please do not use this step）
 - In the directory **darknet**, there is file called **Makefile**. Before building the darknet, we need to modify some varibles.
 - If the NVIDIA driver, CUDA and CuDNN are installed, and the version of CUDA >= 10.2, we can change `GPU=0` to `GPU=1`, `CUDNN=0` to `CUDNN=1`, in order to use GPU acceleration.
 - If OpenCV is installed, and the version of OpenCV >= 2.4, we can change `OPENCV=0` to `OPENCV=1`, in order to accelerate the image pre-processing.
@@ -33,8 +33,6 @@ make
 #### Step 4. Prepare the configuration files
 - Run the following commands in Terminal to make a folder **cfg**, so that configuration files could be neatly organized.
 ```sh
-cd ..
-mkdir cfg
 cd cfg
 ```
 - Run the following commands in Terminal. **yolov4.cfg** contains the network structure and basic training parameters of YOLOv4. **obj.names** contains the class names of our model. **obj.data** contains the custom files we need.
@@ -55,17 +53,13 @@ cd weights
 ```
 https://drive.google.com/file/d/1fSKsHjh2rsq-j5JdytgbS0n7Fh-STKm4/view?usp=sharing
 ```
-- After downloading the weight file, go back to the main directory.
-```sh
-cd ..
-```
 
 
 #### Step 6. Test your own images with this trained model
 Run the following commands to test your own images. `chmod +x darknet/darknet` is used to make the `darknet` executable. `example.jpg` is your own images to be detected. 
 ```sh
-chmod +x darknet/darknet
-./darknet/darknet detector test cfg/obj.data cfg/yolov4.cfg weights/yolov4_CM.weights -ext_output example.jpg
+chmod +x darknet
+./darknet detector test cfg/KIT.data cfg/KIT.cfg yolov4_CM.weights -ext_output data/000001.jpg
 ```
 
 
