@@ -49,8 +49,16 @@ cd ..
 https://drive.google.com/file/d/1vhK-e2nDTJy3T_u7RyPW0DmJIN2gfMnP/view?usp=sharing
 ```
 
+#### Step 6. download the test image
+```sh
+cd data
+https://raw.githubusercontent.com/XiangYusheng/YOLOv4_Geimer/main/000001.jpg
+https://raw.githubusercontent.com/XiangYusheng/YOLOv4_Geimer/main/0095.jpg
+https://raw.githubusercontent.com/XiangYusheng/YOLOv4_Geimer/main/0049.jpg
+https://raw.githubusercontent.com/XiangYusheng/YOLOv4_Geimer/main/0043.jpg
+```
 
-#### Step 6. Test your own images with this trained model
+#### Step 7. Test your own images with this trained model
 Run the following commands to test your own images. `chmod +x darknet/darknet` is used to make the `darknet` executable. `example.jpg` is your own images to be detected. 
 ```sh
 chmod +x darknet
